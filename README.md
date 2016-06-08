@@ -19,5 +19,7 @@ $ sudo apt-get install ruby-full
 
 <b>Run this command from the HackSaw directory :</b>
 ```
-$ ruby script
+$ ruby script.rb
 ```
+
+<b>Note : </b>Ensure all require_relative files are in the same directory as script.rb
