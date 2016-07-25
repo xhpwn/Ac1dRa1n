@@ -1,0 +1,6 @@
+{
+  "name": "Ac1dra1n",
+  "tagline": "Custom-length custom-model random password generator.",
+  "body": "# Ac1dRa1n\r\nCustom-length custom-model random password generator.\r\n\r\nGenerates tough and purely <b>randomized</b> passwords.\r\n\r\n# Getting Ruby\r\n\r\n<b>OS X Users :</b>\r\n```\r\n$ brew install ruby\r\n```\r\n<b>Debian/GNU/Linux :</b>\r\n```\r\n$ sudo apt-get install ruby-full\r\n```\r\n# Running Ac1dRa1n\r\n\r\n<b>Run this command from the HackSaw directory :</b>\r\n```\r\n$ ruby script.rb\r\n```\r\n\r\n<b>Note : </b>Ensure all require_relative files are in the same directory as script.rb\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
