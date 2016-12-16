@@ -16,6 +16,7 @@ require_relative 'Numeric'
 require_relative 'Alphabetical'
 require_relative 'Alphanumeric'
 require_relative 'ASCII'
+require_relative 'WriteOut'
 
 system "clear"
 
@@ -48,36 +49,45 @@ puts "(4) All ASCII"
 puts "(5) Kill Ac1dRa1n"
 print "Selector : "
 
+writemode = ""
 modselector = gets.chomp
 
 case modselector
 
     when "1"
+	writemode = "Numeric"
         print "\nEnter desired length : "
         outlength = gets.chomp.to_i
         out = Numeric.generate(outlength)
-        puts "Generated password => %s" % [out]
+        puts "\nGenerated password => %s" % [out]
+	WriteOut.writeout(writemode, out)
         sleep(1)
 
     when "2"
+	writemode = "Alphabetical"
         print "\nEnter desired length : "
         outlength = gets.chomp.to_i
         out = Alphabetical.generate(outlength)
-        puts "Generated password => %s" % [out]
+        puts "\nGenerated password => %s" % [out]
+	WriteOut.writeout(writemode, out)
         sleep(1)
 
     when "3"
+	writemode = "Alphanumeric"
         print "\nEnter desired length : "
         outlength = gets.chomp.to_i
         out = Alphanumeric.generate(outlength)
-        puts "Generated password => %s" % [out]
+        puts "\nGenerated password => %s" % [out]
+	WriteOut.writeout(writemode, out)
         sleep(1)
 
     when "4"
+	writemode = "ASCII"
         print "\nEnter desired length : "
         outlength = gets.chomp.to_i
         out = ASCII.generate(outlength)
-        puts "Generated password => %s" % [out]
+        puts "\nGenerated password => %s" % [out]
+	WriteOut.writeout(writemode, out)
         sleep(1)
 
     end
